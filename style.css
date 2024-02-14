@@ -16,16 +16,16 @@ h1{
     margin-bottom: 30px;
 }
 #calc{
-    background-color: white;
+    background-color: #2E2B33;
     width: 250px;
     height: 350px;
     margin: auto;
     padding: 2px;
 }
 #tela{
-    background-color: rgb(85, 81, 81);
+    background-color: #68636E;
     height: 60px;
-    margin: 2px 2px 20px 2px;
+    margin: 2px 2px 5px 2px;
     border: 2px solid black;
     color: white;
 }
@@ -34,18 +34,28 @@ h1{
     font-size: 2.5em;
 }
 .botoes{
-    background-color: rgb(235, 170, 170);
+    background-color: #7000ef00;
     height: 45px;
-    margin: 2px;
+    margin: 4px;
     display: inline-flex;
+}
+.botaof{
+    
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #6E21C5;
+    margin: 4px 8px;
+    padding: 0;
+    border-radius: 50%;
 }
 .botao{
     
     display: inline-block;
     width: 45px;
     height: 45px;
-    background-color: chocolate;
-    margin: 0px 8px;
+    background-color: #9137f7;
+    margin: 4px 8px;
     padding: 0;
     border-radius: 50%;
 }
