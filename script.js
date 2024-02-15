@@ -5,7 +5,8 @@ document.addEventListener('keydown', function(event) {
     const isEnter = (key === 'Enter' || event.code === 'Enter');
     const isBackspace = (key === 'Backspace' || event.code === 'Backspace');
     const isEsc = (key === 'Escape' || event.code === 'Escape')
-    if (/[0-9+\-*/.=]/.test(key) || isEnter || isBackspace || isEsc) {
+    const isPorcento = (key === '%' || (key === '5' && event.shiftKey));
+    if (/[0-9+\-*/.=]/.test(key) || isEnter || isBackspace || isEsc || isPorcento) {
         event.preventDefault();
         if (key === 'Enter') {
             igual();
@@ -15,6 +16,9 @@ document.addEventListener('keydown', function(event) {
         }else if(key === 'Escape'){
             event.preventDefault();
             ac();
+        }else if(key ==='%'){
+            event.preventDefault();
+            porcento()
         }else{
             add(key);
         }
@@ -63,7 +67,7 @@ function igual(){
         
         var resultado = eval(expressão)
         
-        resultado = parseFloat(resultado.toFixed(2))
+        resultado = parseFloat(resultado.toFixed(4))
         tela.innerHTML = resultado
         
     } else{
