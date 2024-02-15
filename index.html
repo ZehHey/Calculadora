@@ -9,38 +9,43 @@
 <body>
     <h1>Calculadora</h1>
     <div id="calc">
-        <div id="tela"><p id="res">TESTE</p></div>
+        <div id="tela"><p id="res"></p></div>
         <div class="botoes">
-            <div class="botao" style="background-color: rgb(167, 168, 245);"><p class="b">AC</p></div>
-            <div class="botaof"><p class="b">()</p></div>
-            <div class="botaof"><p class="b">%</p></div>
-            <div class="botaof"><p class="b" style="font-size: 1.5em; font-weight: lighter;">&#247;</p></div>
+            <input class="teclaac" type="button" value="AC" onclick="ac()">
+            <input class="teclaf" type="button" value="()" onclick="parenteses()">
+            <input class="teclaf" type="button" value="%" onclick="porcento()">
+            <input class="teclaf" type="button" value="/" onclick="add('/')">
+        </div>
+        
+        <div class="botoes">
+            <input class="tecla" type="button" value="7" onclick="add('7')">
+            <input class="tecla" type="button" value="8" onclick="add('8')">
+            <input class="tecla" type="button" value="9" onclick="add('9')">
+            <input class="teclaf" type="button" value="X" onclick="add('*')">
         </div>
         <div class="botoes">
-            <div class="botao"><p class="b">7</p></div>
-            <div class="botao"><p class="b">8</p></div>
-            <div class="botao"><p class="b">9</p></div>
-            <div class="botaof"><p class="b">x</p></div>
+            <input class="tecla" type="button" value="4" onclick="add('4')">
+            <input class="tecla" type="button" value="5" onclick="add('5')">
+            <input class="tecla" type="button" value="6" onclick="add('6')">
+            <input class="teclaf" type="button" value="-" onclick="add('-')">
         </div>
         <div class="botoes">
-            <div class="botao"><p class="b">4</p></div>
-            <div class="botao"><p class="b">5</p></div>
-            <div class="botao"><p class="b">6</p></div>
-            <div class="botaof"><p class="b">-</p></div>
+            <input class="tecla" type="button" value="1" onclick="add('1')">
+            <input class="tecla" type="button" value="2" onclick="add('2')">
+            <input class="tecla" type="button" value="3" onclick="add('3')">
+            <input class="teclaf" type="button" value="+" onclick="add('+')">
         </div>
         <div class="botoes">
-            <div class="botao"><p class="b">1</p></div>
-            <div class="botao"><p class="b">2</p></div>
-            <div class="botao"><p class="b">3</p></div>
-            <div class="botaof"><p class="b">+</p></div>
-        </div>
-        <div class="botoes">
-            <div class="botao"><p class="b">0</p></div>
-            <div class="botao"><p class="b">,</p></div>
-            <div class="botao"><p class="b">&larr;</p></div>
-            <div class="botaof"><p class="b">=</p></div>
-        </div>
+            <input class="tecla" type="button" value="0" onclick="add('0')">
+            <input class="tecla" type="button" value="." onclick="add('.')">
+            <input class="tecla" type="button" value="&larr;" onclick="apagar()">
+            <input class="teclaf" type="button" value="=" onclick="igual()">
         </div>
     </div>
+    <aside>
+        <p>Use o seu teclado também!</p>
+        <p>*A tecla Esc funciona como o botão AC</p>
+    </aside>
+    <script src="script.js"></script>
 </body>
 </html>
